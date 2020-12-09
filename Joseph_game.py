@@ -14,7 +14,7 @@ def tao_tai(players, y, z):
     p, k = 0, 0
     while len(list1) != z:
         p = (len(list1) % y + p) % y
-        del list1[y-k-1:len(list1):y]
+        del list1[y - k - 1:len(list1):y]
         k = p
     # print(list1)  ps:每次杀完人剩下的人
     return list1
