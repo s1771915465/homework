@@ -13,7 +13,7 @@ def cai_shu_zi():
             text_check = ''.join(j for j in Entry1.get() if j in '0123456789')
             int_cin = int(text_check)
             if i == 5 and int_cin != n:
-                Label2['text'] = "你已经猜了5次了，并且都没有猜中，本局是你的败北"
+                Label2['text'] = "答案是{m}你已经猜了5次了，并且都没有猜中，本局是你的败北".format(m=n)
                 Button1['text'] = "游戏结束"
                 Entry1.delete(0, 'end')
             elif int_cin < n:
